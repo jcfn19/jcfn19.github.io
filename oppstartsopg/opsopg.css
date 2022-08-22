@@ -1,0 +1,12 @@
+body {background-color: blue;}
+h1 {color: red;}
+.boks {
+    position: absolute;
+    left: 500px;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    padding: 20px;
+    border: 10px outset black;
+    color: black;
+}
