@@ -1,0 +1,91 @@
+body,html{
+    height: 100%;
+}
+
+.meny{
+    background-color: #ccc;
+    width: 1519px;
+    height: 48px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+}
+
+.meny > a{
+    text-decoration: none;
+    color: black;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.meny a:hover{
+    background-color: whitesmoke;
+}
+
+.meny a.hjemaktiv{
+    background-color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .meny{
+        height: auto;
+    }
+    .meny > a{
+        float: none;
+        display: flex;
+        /* align-items: center; */
+    }
+    .hoved{
+        position: absolute;
+        top: 180px;
+    }
+}
+
+.hoved{
+    display: flex;
+    justify-content: center;
+}
+
+#vsch{
+    position: absolute;
+    top: 100px;
+}
+
+#vscl{
+    text-decoration: none;
+    color: black;
+}
+
+#img1{
+    position: relative;
+    left: 0px;
+    top: 10px;
+}
+
+#img2{
+    position: absolute;
+    left: 0px;
+    top: 500px;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+    position: fixed;
+    top: 48px;
+    left: 0%;
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    z-index: 10;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+  }

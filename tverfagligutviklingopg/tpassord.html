@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tpassord.css">
+    <script src="tpassord.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="meny">
+        <a href="index.html">hjem</a>
+        <a class="hjemaktiv" href="tpassord.html">sikkerhet og personvern</a>
+        <a href="tprogramvare.html">installasjon av programvare</a>
+        <a href="tprinter.html">ut skrift instrukser</a>
+    </div>
+    <br>
+    <!--starter hoved div-->
+    <div class="hoved">
+        <h1>passord og 2FA</h1>
+        <h2> hva trenger du hjelp med?</h2>
+        <!--diven til knappene-->
+        <div class="hbtn">
+            <button onclick="prf()">passord regler</button>
+            <button onclick="paslagingf()">hvordan lage passord</button>
+            <button onclick="tfaf()">info om 2FA/hvordan aktivere 2FA</button>
+            <!--passord regler sin div-->
+            <div id="pr">
+                <h3>når du lager et passord i vår bedrift bør du følge disse reglene: </h3>
+                <p>- passorde bør ha små bokstaver</p>
+                <p>- passorde bør ha store bokstaver</p>
+                <p>- passorde bør ha tall </p>
+                <p>- passorde bør ha en lengde på minimum 8 tegn</p>
+                <p>- ikke del passorde ditt med noen</p>
+                <p>- passorde dit må være unikt, ikke bruk et passord du har brukt før eller bruker andre steder</p>
+                <p>- passorde må forandres hvert 2år</p>
+                <p>- du bør ha aktivert 2FA (trykk på info om 2FA/hvordan aktivere 2FA hvis du ikke har aktivert)</p>
+
+            </div>
+            <!--avsluter passord regler sin div-->
+            <!--passord laging og testing div-->
+            <div id="paslaging">
+                <p>hvis du lurer på hvordan lage et godt passord så kan du teste det ut her</p>
+                <div class="container">
+                    <form action="/action_page.php">
+                
+                    <label for="psw">Password</label>
+                        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+                    </form>
+                </div>
+                
+                <div id="message">
+                    <h3>et godt passord bør ha det som står under</h3>
+                    <p id="letter" class="invalid">Minimum en <b>litten</b> bokstav</p>
+                    <p id="capital" class="invalid">Minimum en <b>stor</b> bokstav</p>
+                    <p id="number" class="invalid">Minimum et <b>nummer</b></p>
+                    <p id="length" class="invalid">Minimum bør det være <b>8 karakterer</b> lang</p>
+                </div>
+            </div>
+            <!--avslutter passord laging diven-->
+            <!--starter 2fa diven-->
+            <div id="tfa">
+                <img id="tfaimg" src="bilder/5101874.jpg" alt="" width="300px" height="300px">
+                <h3>hva er 2FA</h3>
+                <p>2FA er en elektronisk måte å dobelt sjekke/verifisere at det er din bruker som prøver og komme seg inpå en netside eller applikatjon. vi bruker en app for 2fa hvor du får en fire sifret kode du må skrive in</p>
+                <h3>hvordan aktivere 2FA</h3>
+                <p>1.  for å aktivere 2fa må du laste ned appen fra app store eller google play på telefonen din</p>
+                <p>2.  gå inpå appen og logg in med bruker navn og passorde ditt</p>
+                <p>3.  på bedriften sin nettside logg in og gå inpå kontoen din oppi høyre gjørne</p>
+                <p>4.  når du er inpå kontoen din på netsiden gå til konto detaljer, kan være at du må skrive in passorde ditt for å komme inpå konto detaljer</p>
+                <p>5.  der det står 2fa trykk på aktiver</p> 
+                <p>6.  etter du har trykket på aktiver vil den spøre deg om en kode, gå inpå appen</p>
+                <p>7.  inpå appen skriv koden som kommer opp in på netsiden</p>
+                <p>8.  da skal 2FA være aktivert. hvis du er usikker gå in på netsiden og kjekk om det står tilkoblet under 2fa</p>
+            </div>
+            <!--avslutter 2fa diven-->
+        </div>
+        <!--avslutter diven til knappene-->
+    </div>
+    <!--avslutter hoved diven-->
+</body>
+</html>
