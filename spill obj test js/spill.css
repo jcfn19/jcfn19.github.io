@@ -1,0 +1,31 @@
+body {
+    height: 100vh;
+    position: relative;
+}
+
+#boks{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+/*#eboks{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+
+    position: absolute;
+    top: 100px;
+    left: 900px;
+}*/
+
+#nwave {
+    visibility: hidden;
+    position: absolute;
+    top: 600px;
+    left: 1400px;
+}
